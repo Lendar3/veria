@@ -1,1 +1,11 @@
 .venv/
+.idea/
+VERIRAG_SPEC_RU.md
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+*.py[cod]
+.mypy_cache/
