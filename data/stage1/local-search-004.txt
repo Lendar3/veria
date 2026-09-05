@@ -1,0 +1,17 @@
+Similarity and size of a neighbourhood
+
+Similarity of neighbours
+
+Any two neighbours should differ as little as possible. It should be computationally easy, in constant time if possible, to modify the representation of any solution s into any of its neighbours s'.
+
+In addition, the objective function values of any two neighbours should differ very little. This describes the "flatness" of the solution-space landscape.
+
+Example: Give one positive and one negative example of a neighbourhood relation for the Knapsack problem.
+
+Small neighbourhood
+
+The relation should be defined so that, for any solution s, the number of its neighbours is not too large. More precisely, the number of neighbours |N(s)| should be upper-bounded by a polynomial function of the task size.
+
+This property guarantees that, in each iteration, the process of searching for the next neighbour is fast. More precisely, it has low, polynomial time complexity.
+
+Example: Give one positive and one negative example of a neighbourhood relation for the Knapsack problem.

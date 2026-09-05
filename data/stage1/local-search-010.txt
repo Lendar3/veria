@@ -1,0 +1,14 @@
+Transition probability and improvements of Simulated Annealing
+
+An example of a transition probability function in SA that satisfies the required properties is:
+
+P(curr, cand, f, temp) = e^(-|f(curr) - f(cand)| / temp)
+
+Since the probability decreases, the SA algorithm asymptotically tends towards the behaviour of HC as time elapses. However, it allows the algorithm to explore a wider range of the solution space at the beginning, when the temperature permits it.
+
+Improvements of SA
+
+There are many possible improvements to SA, including:
+
+- Tabu search, which forbids returning to recently visited solutions.
+- Tunnelling, which allows random jumps from time to time in order to "jump over" high and thin obstacles in the solution space.

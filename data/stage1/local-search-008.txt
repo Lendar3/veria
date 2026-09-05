@@ -1,0 +1,25 @@
+Simulated Annealing and its high-level pseudocode
+
+Simulated Annealing (SA)
+
+Simulated Annealing, unlike HC, makes it possible to occasionally "go down" in the solution-space landscape, but with a probability that decreases over time.
+
+The name "simulated annealing" comes from an analogy to a process in metallurgy that consists of slowly cooling liquid metal to achieve a very regular and strong crystal structure.
+
+High-level pseudocode of SA
+
+current = initialRandomSolution()
+
+while stopCondition:
+    candidate = randomNeighbour(current)
+    if f(candidate) is better than f(current):
+        current = candidate
+    else:
+        current = candidate with probability P(current, candidate, f, temperature)
+    lowerTemperature()
+
+return bestSeenSolution
+
+Here, f is the objective function.
+
+The algorithm allows moving to a worse solution with a probability that decreases over time and with the degree of deterioration of the objective function.

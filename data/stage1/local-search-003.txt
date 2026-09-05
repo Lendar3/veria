@@ -1,0 +1,18 @@
+Properties of a good neighbourhood relation
+
+The desired properties of a well-defined neighbourhood relation are as follows:
+
+- The relation should be connected. This is necessary to guarantee that the best solution is reachable from any starting solution.
+- Any pair of neighbours should be similar to each other. This makes it possible to quickly modify one solution into a neighbour.
+- For each solution, the number of neighbours should not be too large. This makes it possible to efficiently select a neighbour to move to.
+- The diameter of the relation should be small. This provides an upper bound on the total number of iterations of the algorithm.
+
+A well-designed neighbourhood relation has to satisfy all four properties.
+
+Connectedness
+
+A binary relation is connected if and only if its corresponding graph is connected. In other words, for any two vertices s and s', there is a path connecting them.
+
+This property is necessary for the reachability of any solution from any other starting solution.
+
+Example: In the Knapsack problem, a solution can be represented by a characteristic vector. How can the neighbourhood be defined to satisfy connectedness? Give one example of a neighbourhood relation on characteristic vectors that is not connected.

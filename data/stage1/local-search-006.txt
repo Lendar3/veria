@@ -1,0 +1,10 @@
+Random local search
+
+The simplest local search approach is to start with a random solution. In each iteration, the algorithm moves to a random neighbour and records the best solution found. This continues until the available time resources are exhausted.
+
+For hard optimisation problems, the whole solution space is too large to be examined, so brute-force search is impossible.
+
+There are many improvements to this basic random-search approach, including:
+
+- Hill climbing.
+- Simulated annealing.

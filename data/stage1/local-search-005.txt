@@ -1,0 +1,18 @@
+Diameter and implications of a neighbourhood relation
+
+Small diameter of the relation
+
+The diameter of a relation is defined as the longest distance between any two elements in the corresponding graph of that relation.
+
+The diameter of the neighbourhood relation should be upper-bounded by a polynomial function of the task size.
+
+This property guarantees that the total number of iterations in the local search algorithm is acceptable. More precisely, its time complexity is bounded by a polynomial.
+
+Example: For the Knapsack problem, give one positive and one negative example of a neighbourhood relation.
+
+Implications of the properties
+
+The four properties guarantee:
+
+- The best solution can be reached because of connectedness.
+- The local search algorithm has polynomial time complexity because of the other properties.

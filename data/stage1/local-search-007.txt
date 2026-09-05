@@ -1,0 +1,24 @@
+Hill Climbing and its improvements
+
+Hill Climbing algorithm (HC)
+
+Hill Climbing is a less "blind" approach than random search:
+
+- Start with any random feasible solution.
+- In each iteration, move from the current solution s to a neighbour s' that has the best objective function value among all neighbours of s.
+- Continue until no neighbour of s is better than s.
+
+This is a greedy approach because it evaluates only the neighbours of the current solution and selects the best one to move to.
+
+Example: Propose a well-designed neighbourhood relation for the Knapsack problem and explain how HC behaves with this relation. What is its expected time complexity?
+
+Improvements of HC
+
+Possible improvements include:
+
+- Restarting HC many times from different random starting positions.
+- k-bundle search, which keeps a list of the top-k solutions at each iteration. This is different from restarting HC k times.
+
+Despite these improvements, the HC approach always goes "up" in the solution-space landscape. This results in finding only the closest local optimum, not necessarily the global one.
+
+In any variant of HC, the best solution seen is the one considered when the algorithm terminates.

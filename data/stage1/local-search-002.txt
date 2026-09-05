@@ -1,0 +1,18 @@
+Binary relations and neighbourhoods
+
+Graph of a binary relation
+
+Given a binary relation R ⊆ V × V on the set V, its corresponding directed graph G = (V, E) is defined as follows:
+
+- The set of vertices is V.
+- The set of edges E is exactly the set of all pairs v, v' ∈ V such that v is in relation R with v', meaning that (v, v') ∈ R.
+
+Neighbourhood
+
+For each current solution s, the set of solutions available in one iteration move from s to one of its neighbours is called the neighbourhood of s and is denoted N(s).
+
+The neighbourhood is defined by a binary relation N ⊆ S × S on pairs of solutions, representing which pairs of solutions are neighbours. More precisely, s' is a neighbour of s if and only if (s, s') ∈ N.
+
+Thus, the first step in approaching a problem with local search is to define the proper neighbourhood relation for that problem.
+
+Example: Propose a neighbourhood relation for the Knapsack problem.

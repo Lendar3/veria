@@ -1,0 +1,21 @@
+The idea and properties of local search heuristics
+
+The idea of local search heuristics
+
+A heuristic is a technique for approaching hard problems that does not give strong guarantees on the quality of the solution, but is efficient.
+
+Local search heuristics are particular heuristic techniques for solving hard combinatorial optimisation problems that are based on the idea of searching the solution space.
+
+Generally speaking, in a local search approach, we start with an initial feasible solution. In each iteration, we move from the current solution s to another "close" solution s' that is obtained from s by a small and quick modification. Each time, we evaluate the objective function while looking for the best solution.
+
+Properties of local search
+
+Positive properties:
+
+- The approach is universal, meaning that it can be applied to any combinatorial problem.
+- Algorithms based on local search are usually fast. More precisely, they have acceptably low, polynomial time complexity.
+
+Negative properties:
+
+- There is no guarantee of finding the global optimum.
+- There is usually no guarantee of how much poorer the found solution is than the global optimum.

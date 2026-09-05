@@ -1,0 +1,16 @@
+Implementation and transition probability of Simulated Annealing
+
+Implementation of SA
+
+The particular implementation depends on several decisions:
+
+- A stop condition. Usually, this is that there has been no move for the last K iterations, where K is a parameter. This means that the algorithm is likely to be at a local optimum.
+- A particular probability function.
+- A particular cooling scheme that determines how the temperature is lowered.
+
+Desired properties of the transition probability in SA
+
+Assuming that the candidate is worse than the current solution, the transition probability function should satisfy the following properties:
+
+- For a fixed current solution and candidate, the probability should decrease over time, represented by decreasing temperature.
+- For a fixed temperature, the probability should decrease as the difference between the objective function values of the two solutions increases. It should be easier to move to a slightly worse solution than to a much worse one.
